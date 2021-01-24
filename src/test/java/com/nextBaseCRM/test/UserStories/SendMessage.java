@@ -1,4 +1,4 @@
-package com.nextBaseCRM.test;
+package com.nextBaseCRM.test.UserStories;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -15,7 +15,8 @@ public class SendMessage {
 
         driver.get("https://login2.nextbasecrm.com/");
         driver.findElement(By.name("USER_LOGIN")).sendKeys("hr8@cybertekschool.com");
-        driver.findElement(By.name("USER_PASSWORD")).sendKeys("UserUser"+ Keys.ENTER);
+        driver.findElement(By.name("USER_PASSWORD")).sendKeys("UserUser" + Keys.ENTER);
+        driver.findElement(By.className("feed-add-post-micro-title")).click();
 
 
     }
