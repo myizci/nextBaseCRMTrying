@@ -22,8 +22,8 @@ public class UserStory2SendMessage {
 
     @Test
     public void SendMessage(){
-        WebElement SendMessageArea = driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-message']/span[.='Message']"));
-        SendMessageArea.sendKeys("Hi");
+        WebElement SendMessageArea = driver.findElement(By.xpath("(//span[.='Message'])[2]"));
+        SendMessageArea.click();
 
     }
 
